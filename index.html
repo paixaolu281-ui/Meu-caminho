@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meu Caminho</title>
+<meta name="description" content="Aplicativo pessoal para caminhada, emagrecimento e acompanhamento de evolução.">
+<meta name="theme-color" content="#0f3d2e">
+<meta name="color-scheme" content="light dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Meu Caminho">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" type="image/png" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="top"><span class="logo" aria-hidden="true">👣</span><div><h1 class="brand">Meu Caminho</h1><small class="sub">Cada passo conta.</small></div></header>
+<main id="view" tabindex="-1"><p class="mut pad">Carregando…</p></main>
+<noscript><p class="pad">O Meu Caminho precisa de JavaScript para funcionar.</p></noscript>
+<nav id="nav" aria-label="Navegação principal" hidden>
+  <button data-act="tab" data-t="home"><span aria-hidden="true">🏠</span>Início</button>
+  <button data-act="tab" data-t="walk"><span aria-hidden="true">🚶</span>Caminhar</button>
+  <button data-act="tab" data-t="prog"><span aria-hidden="true">📊</span>Progresso</button>
+  <button data-act="tab" data-t="metas"><span aria-hidden="true">🎯</span>Metas</button>
+  <button data-act="tab" data-t="perfil"><span aria-hidden="true">👤</span>Perfil</button>
+</nav>
+<div id="modal"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="imp" accept=".json,application/json" hidden>
+<script src="./app.js"></script>
+</body>
+</html>
